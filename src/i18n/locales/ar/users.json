@@ -1,0 +1,28 @@
+{
+  "createUser": {
+    "title": "إنشاء مستخدم جديد",
+    "firstNameLabel": "الاسم الأول",
+    "firstNamePlaceholder": "أدخل الاسم الأول",
+    "lastNameLabel": "اسم العائلة",
+    "lastNamePlaceholder": "أدخل اسم العائلة",
+    "emailLabel": "البريد الإلكتروني",
+    "emailPlaceholder": "أدخل البريد الإلكتروني",
+    "passwordLabel": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "success": "تم إنشاء المستخدم بنجاح",
+    "error": "فشل في إنشاء المستخدم"
+  },
+  "common": {
+    "save": "حفظ",
+    "saving": "جاري الحفظ...",
+    "cancel": "إلغاء",
+    "back": "رجوع"
+  },
+  "roleSelector": {
+    "title": "الدور المعين",
+    "assignSuccess": "تم تعيين الدور بنجاح",
+    "assignError": "فشل في تعيين الدور",
+    "removeSuccess": "تم إزالة الدور بنجاح",
+    "removeError": "فشل في إزالة الدور"
+  }
+}

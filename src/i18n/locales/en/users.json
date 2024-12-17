@@ -1,0 +1,28 @@
+{
+  "createUser": {
+    "title": "Create New User",
+    "firstNameLabel": "First Name",
+    "firstNamePlaceholder": "Enter first name",
+    "lastNameLabel": "Last Name",
+    "lastNamePlaceholder": "Enter last name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "Enter email address",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Enter password",
+    "success": "User created successfully",
+    "error": "Failed to create user"
+  },
+  "common": {
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "roleSelector": {
+    "title": "Assigned Role",
+    "assignSuccess": "Role assigned successfully",
+    "assignError": "Failed to assign role",
+    "removeSuccess": "Role removed successfully",
+    "removeError": "Failed to remove role"
+  }
+}

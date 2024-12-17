@@ -15,6 +15,7 @@
       "phone": "Phone",
       "status": "Status",
       "created": "Created At",
+      "create": "Create User",
       "active": "Active",
       "inactive": "Inactive"
     },

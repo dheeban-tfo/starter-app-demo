@@ -1,12 +1,16 @@
 import React from 'react';
 import { useQuery } from '@tanstack/react-query';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Loader2, UserCog, Check, X } from 'lucide-react';
+import { Loader2, UserCog, Check, X, Plus } from 'lucide-react';
 import { userService } from '../../../services/user.service';
 import { formatDate } from '../../../utils/date';
+import { CreateUserDrawer } from '../../../components/UserManagement/CreateUserDrawer';
 
 export const Users: React.FC = () => {
+  const navigate = useNavigate();
   const { t } = useTranslation('modules');
+  const [isDrawerOpen, setIsDrawerOpen] = React.useState(false);
   const { data: users, isLoading } = useQuery({
     queryKey: ['users'],
     queryFn: userService.getUsers,
@@ -22,13 +26,20 @@ export const Users: React.FC = () => {
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between mb-4">
         <div className="flex items-center space-x-3">
           <UserCog className="w-6 h-6 text-primary" />
           <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
             {t('userManagement.users.title')}
           </h2>
         </div>
+        <button
+          onClick={() => setIsDrawerOpen(true)}
+          className="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-primary hover:bg-primary/90 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+        >
+          <Plus className="w-4 h-4 mr-2" />
+          {t('userManagement.users.create')}
+        </button>
       </div>
 
       <div className="bg-white dark:bg-gray-800 shadow-sm rounded-lg overflow-hidden">
@@ -56,7 +67,10 @@ export const Users: React.FC = () => {
             <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
               {users?.map((user) => (
                 <tr key={user.id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                  <td className="px-6 py-4 whitespace-nowrap">
+                  <td 
+                    className="px-6 py-4 whitespace-nowrap cursor-pointer"
+                    onClick={() => navigate(`/usermanagement/users/${user.id}`)}
+                  >
                     <div className="text-sm font-medium text-gray-900 dark:text-white">
                       {user.firstName} {user.lastName}
                     </div>
@@ -88,6 +102,11 @@ export const Users: React.FC = () => {
           </table>
         </div>
       </div>
+      
+      <CreateUserDrawer
+        isOpen={isDrawerOpen}
+        onClose={() => setIsDrawerOpen(false)}
+      />
     </div>
   );
 };

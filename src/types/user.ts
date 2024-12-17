@@ -9,6 +9,22 @@ export interface User {
   createdAt: string;
 }
 
+export interface UserAccess {
+  userId: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  roles: {
+    roleId: number;
+    roleName: string;
+    permissions: {
+      roleId: number;
+      moduleId: number;
+      actionId: number;
+    }[];
+  }[];
+}
+
 export interface Role {
   id: number;
   name: string;

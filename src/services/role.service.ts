@@ -42,4 +42,12 @@ export const roleService = {
   removePermission: async (data: RemovePermissionRequest): Promise<void> => {
     await http.delete('/RoleManagement/RemovePermissionFromRole', { data });
   },
+
+  assignRoleToUser: async (userId: string, roleId: number): Promise<void> => {
+    await http.post('/RoleManagement/AssignRoleToUser', { userId, roleId });
+  },
+
+  removeRoleFromUser: async (userId: string, roleId: number): Promise<void> => {
+    await http.delete('/RoleManagement/RemoveRoleFromUser', { data: { userId, roleId } });
+  },
 };

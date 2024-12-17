@@ -12,6 +12,8 @@ import enRoles from './locales/en/roles.json';
 import arRoles from './locales/ar/roles.json';
 import enModules from './locales/en/modules.json';
 import arModules from './locales/ar/modules.json';
+import enUsers from './locales/en/users.json';
+import arUsers from './locales/ar/users.json';
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -21,7 +23,8 @@ i18n.use(initReactI18next).init({
       profile: enProfile,
       navigation: enNavigation,
       roles: enRoles,
-      modules: enModules
+      modules: enModules,
+      users: enUsers
     },
     ar: {
       auth: arAuth,
@@ -29,7 +32,8 @@ i18n.use(initReactI18next).init({
       profile: arProfile,
       navigation: arNavigation,
       roles: arRoles,
-      modules: arModules
+      modules: arModules,
+      users: arUsers
     },
   },
   lng: 'en',
