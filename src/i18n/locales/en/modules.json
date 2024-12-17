@@ -1,0 +1,35 @@
+{
+  "modules": {
+    "UserManagement": "User Management",
+    "CommunityManagement": "Community Management",
+    "FacilityManagement": "Facility Management",
+    "FacilityBooking": "Facility Booking"
+  },
+  "userManagement": {
+    "title": "User Management",
+    "description": "Manage users, roles, and permissions across the system.",
+    "users": {
+      "title": "Users",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "status": "Status",
+      "created": "Created At",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "roles": {
+      "title": "Roles",
+      "create": "Create Role"
+    },
+    "modules": {
+      "title": "System Modules",
+      "actions": "Available Actions",
+      "noActions": "No actions available"
+    }
+  },
+  "communityManagement": {
+    "title": "Community Management",
+    "description": "Manage communities, members, and related activities."
+  }
+}

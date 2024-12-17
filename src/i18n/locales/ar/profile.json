@@ -1,0 +1,42 @@
+{
+  "personalInfo": "المعلومات الشخصية",
+  "name": "الاسم",
+  "email": "البريد الإلكتروني",
+  "roles": "الأدوار",
+  "permissions": "صلاحيات الوحدات",
+  "error": {
+    "loading": "فشل في تحميل معلومات الملف الشخصي. يرجى المحاولة مرة أخرى لاحقاً."
+  },
+  "themeSettings": {
+    "title": "إعدادات المظهر",
+    "reset": "إعادة تعيين",
+    "mode": "وضع الألوان",
+    "navigation": "نوع التنقل",
+    "navigationTypes": {
+      "top": "تنقل علوي",
+      "side": "تنقل جانبي"
+    },
+    "light": "فاتح",
+    "dark": "داكن",
+    "direction": "اتجاه النص",
+    "font": "نوع الخط",
+    "fonts": {
+      "inter": "انتر",
+      "roboto": "روبوتو",
+      "cairo": "القاهرة"
+    },
+    "language": "اللغة",
+    "languages": {
+      "en": "English",
+      "ar": "العربية"
+    },
+    "colorSettings": "إعدادات الألوان",
+    "colorLabels": {
+      "primary": "الرئيسي",
+      "secondary": "الثانوي",
+      "background": "الخلفية",
+      "text": "النص",
+      "accent": "التأكيد"
+    }
+  }
+}

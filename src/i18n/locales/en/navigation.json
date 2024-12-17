@@ -1,0 +1,12 @@
+{
+  "dashboard": "Dashboard",
+  "modules": {
+    "UserManagement": "User Management",
+    "UserManagement.users": "Users",
+    "UserManagement.roles": "Roles",
+    "UserManagement.modules": "Modules",
+    "CommunityManagement": "Community Management",
+    "FacilityManagement": "Facility Management",
+    "FacilityBooking": "Facility Booking"
+  }
+}

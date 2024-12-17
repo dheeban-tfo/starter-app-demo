@@ -1,0 +1,12 @@
+{
+  "dashboard": "لوحة التحكم",
+  "modules": {
+    "UserManagement": "إدارة المستخدمين",
+    "UserManagement.users": "المستخدمين",
+    "UserManagement.roles": "الأدوار",
+    "UserManagement.modules": "الوحدات",
+    "CommunityManagement": "إدارة المجتمع",
+    "FacilityManagement": "إدارة المرافق",
+    "FacilityBooking": "حجز المرافق"
+  }
+}

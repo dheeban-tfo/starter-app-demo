@@ -1,0 +1,21 @@
+{
+  "createRole": {
+    "title": "إنشاء دور جديد",
+    "nameLabel": "اسم الدور",
+    "namePlaceholder": "أدخل اسم الدور",
+    "success": "تم إنشاء الدور بنجاح",
+    "error": "فشل في إنشاء الدور"
+  },
+  "common": {
+    "save": "حفظ",
+    "saving": "جاري الحفظ...",
+    "cancel": "إلغاء",
+    "back": "رجوع"
+  },
+  "permissions": {
+    "assignSuccess": "تم منح الصلاحية بنجاح",
+    "assignError": "فشل في منح الصلاحية",
+    "removeSuccess": "تم إزالة الصلاحية بنجاح",
+    "removeError": "فشل في إزالة الصلاحية"
+  }
+}

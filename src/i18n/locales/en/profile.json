@@ -1,0 +1,42 @@
+{
+  "personalInfo": "Personal Information",
+  "name": "Name",
+  "email": "Email",
+  "roles": "Roles",
+  "permissions": "Module Permissions",
+  "error": {
+    "loading": "Failed to load profile information. Please try again later."
+  },
+  "themeSettings": {
+    "title": "Theme Settings",
+    "reset": "Reset to Default",
+    "mode": "Color Mode",
+    "navigation": "Navigation Type",
+    "navigationTypes": {
+      "top": "Top Navigation",
+      "side": "Side Navigation"
+    },
+    "light": "Light",
+    "dark": "Dark",
+    "direction": "Text Direction",
+    "font": "Font Family",
+    "fonts": {
+      "inter": "Inter",
+      "roboto": "Roboto",
+      "cairo": "Cairo"
+    },
+    "language": "Language",
+    "languages": {
+      "en": "English",
+      "ar": "Arabic"
+    },
+    "colorSettings": "Color Settings",
+    "colorLabels": {
+      "primary": "Primary",
+      "secondary": "Secondary",
+      "background": "Background",
+      "text": "Text",
+      "accent": "Accent"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "modules": {
+    "UserManagement": "إدارة المستخدمين",
+    "CommunityManagement": "إدارة المجتمع",
+    "FacilityManagement": "إدارة المرافق",
+    "FacilityBooking": "حجز المرافق"
+  },
+  "userManagement": {
+    "title": "إدارة المستخدمين",
+    "description": "إدارة المستخدمين والأدوار والصلاحيات في النظام.",
+    "users": {
+      "title": "المستخدمين",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "status": "الحالة",
+      "created": "تاريخ الإنشاء",
+      "active": "نشط",
+      "inactive": "غير نشط"
+    },
+    "roles": {
+      "title": "الأدوار",
+      "create": "إنشاء دور"
+    },
+    "modules": {
+      "title": "وحدات النظام",
+      "actions": "الإجراءات المتاحة",
+      "noActions": "لا توجد إجراءات متاحة"
+    }
+  },
+  "communityManagement": {
+    "title": "إدارة المجتمع",
+    "description": "إدارة المجتمعات والأعضاء والأنشطة ذات الصلة."
+  }
+}

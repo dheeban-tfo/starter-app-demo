@@ -1,0 +1,21 @@
+{
+  "createRole": {
+    "title": "Create New Role",
+    "nameLabel": "Role Name",
+    "namePlaceholder": "Enter role name",
+    "success": "Role created successfully",
+    "error": "Failed to create role"
+  },
+  "common": {
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "permissions": {
+    "assignSuccess": "Permission assigned successfully",
+    "assignError": "Failed to assign permission",
+    "removeSuccess": "Permission removed successfully",
+    "removeError": "Failed to remove permission"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "welcome": "Welcome",
+  "role": "Role",
+  "navigation": {
+    "dashboard": "Dashboard",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "language": {
+    "toggle": "Toggle language",
+    "en": "English",
+    "ar": "Arabic"
+  }
+}
