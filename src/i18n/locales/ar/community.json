@@ -1,0 +1,36 @@
+{
+  "createCommunity": {
+    "title": "إنشاء مجتمع جديد",
+    "success": "تم إنشاء المجتمع بنجاح",
+    "error": "فشل في إنشاء المجتمع"
+  },
+  "editCommunity": {
+    "title": "تعديل المجتمع",
+    "success": "تم تحديث المجتمع بنجاح",
+    "error": "فشل في تحديث المجتمع"
+  },
+  "form": {
+    "nameLabel": "اسم المجتمع",
+    "namePlaceholder": "أدخل اسم المجتمع",
+    "addressLabel": "العنوان",
+    "addressPlaceholder": "أدخل عنوان المجتمع",
+    "activeLabel": "نشط"
+  },
+  "common": {
+    "save": "حفظ",
+    "saving": "جاري الحفظ...",
+    "cancel": "إلغاء",
+    "back": "رجوع"
+  },
+  "facility": {
+    "createTitle": "إضافة مرفق جديد",
+    "editTitle": "تعديل المرفق",
+    "nameLabel": "اسم المرفق",
+    "descriptionLabel": "الوصف",
+    "capacityLabel": "السعة",
+    "createSuccess": "تم إنشاء المرفق بنجاح",
+    "createError": "فشل في إنشاء المرفق",
+    "editSuccess": "تم تحديث المرفق بنجاح",
+    "editError": "فشل في تحديث المرفق"
+  }
+}

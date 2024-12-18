@@ -1,5 +1,9 @@
 export const formatDate = (dateString: string): string => {
+  if (!dateString) return '-';
+  
   const date = new Date(dateString);
+  if (isNaN(date.getTime())) return '-';
+
   return new Intl.DateTimeFormat('en-US', {
     year: 'numeric',
     month: 'short',

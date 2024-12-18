@@ -1,0 +1,36 @@
+{
+  "createCommunity": {
+    "title": "Create New Community",
+    "success": "Community created successfully",
+    "error": "Failed to create community"
+  },
+  "editCommunity": {
+    "title": "Edit Community",
+    "success": "Community updated successfully",
+    "error": "Failed to update community"
+  },
+  "form": {
+    "nameLabel": "Community Name",
+    "namePlaceholder": "Enter community name",
+    "addressLabel": "Address",
+    "addressPlaceholder": "Enter community address",
+    "activeLabel": "Active"
+  },
+  "common": {
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "facility": {
+    "createTitle": "Add New Facility",
+    "editTitle": "Edit Facility",
+    "nameLabel": "Facility Name",
+    "descriptionLabel": "Description",
+    "capacityLabel": "Capacity",
+    "createSuccess": "Facility created successfully",
+    "createError": "Failed to create facility",
+    "editSuccess": "Facility updated successfully",
+    "editError": "Failed to update facility"
+  }
+}

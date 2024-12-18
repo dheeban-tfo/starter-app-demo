@@ -1,0 +1,17 @@
+node_modules
+components/Auth
+components/Dashboard
+components/UserManagement
+
+locales/ar/auth.json
+locales/ar/users.json
+locales/ar/navigation.json
+locales/ar/dashboard.json
+
+locales/en/auth.json
+locales/en/users.json
+locales/en/navigation.json
+locales/en/dashboard.json
+
+pages/modules/UserManagement
+

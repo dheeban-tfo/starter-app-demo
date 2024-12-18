@@ -52,7 +52,7 @@ export const AppRoutes: React.FC = () => {
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/usermanagement/*" element={<UserManagement />} />
-        <Route path="/communitymanagement" element={<CommunityManagement />} />
+        <Route path="/communitymanagement/*" element={<CommunityManagement />} />
       </Route>
       <Route path="/" element={<Navigate to="/dashboard" replace />} />
       <Route path="*" element={<Navigate to="/dashboard" replace />} />
