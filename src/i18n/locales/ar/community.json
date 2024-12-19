@@ -64,5 +64,28 @@
     "deleteError": "فشل في حذف الطابق",
     "deleteConfirm": "هل أنت متأكد من حذف هذا الطابق؟",
     "floorNumber": "الطابق {{number}}"
+  },
+  "unit": {
+    "title": "الوحدات",
+    "createTitle": "إضافة وحدة جديدة",
+    "editTitle": "تعديل الوحدة",
+    "numberLabel": "رقم الوحدة",
+    "typeLabel": "نوع الوحدة",
+    "number": "رقم الوحدة",
+    "type": "النوع",
+    "add": "إضافة وحدة",
+    "noUnits": "لا توجد وحدات مضافة",
+    "createSuccess": "تم إنشاء الوحدة بنجاح",
+    "createError": "فشل في إنشاء الوحدة",
+    "editSuccess": "تم تحديث الوحدة بنجاح",
+    "editError": "فشل في تحديث الوحدة",
+    "deleteSuccess": "تم حذف الوحدة بنجاح",
+    "deleteError": "فشل في حذف الوحدة",
+    "deleteConfirm": "هل أنت متأكد من حذف هذه الوحدة؟",
+    "types": {
+      "apartment": "شقة",
+      "studio": "استوديو",
+      "penthouse": "بنتهاوس"
+    }
   }
 }

@@ -2,9 +2,11 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Loader2, Plus, Pencil, Trash2 } from 'lucide-react';
+import { UnitList } from './UnitList';
+import { UnitDrawer } from './UnitDrawer';
 import toast from 'react-hot-toast';
 import { floorService } from '../../services/floor.service';
-import { Floor } from '../../types/floor';
+import { Floor, Unit } from '../../types/floor';
 
 interface FloorListProps {
   blockId: number;
@@ -15,6 +17,9 @@ interface FloorListProps {
 export const FloorList: React.FC<FloorListProps> = ({ blockId, onEdit, onAdd }) => {
   const { t } = useTranslation('community');
   const queryClient = useQueryClient();
+  const [selectedFloorId, setSelectedFloorId] = React.useState<number | null>(null);
+  const [isUnitDrawerOpen, setIsUnitDrawerOpen] = React.useState(false);
+  const [selectedUnit, setSelectedUnit] = React.useState<Unit>();
 
   const { data: floors, isLoading } = useQuery({
     queryKey: ['floors'],
@@ -36,6 +41,21 @@ export const FloorList: React.FC<FloorListProps> = ({ blockId, onEdit, onAdd }) 
     if (window.confirm(t('floor.deleteConfirm'))) {
       deleteFloor(id);
     }
+  };
+
+  const handleEditUnit = (unit: Unit) => {
+    setSelectedUnit(unit);
+    setIsUnitDrawerOpen(true);
+  };
+
+  const handleAddUnit = (floorId: number) => {
+    setSelectedFloorId(floorId);
+    setIsUnitDrawerOpen(true);
+  };
+
+  const handleCloseUnitDrawer = () => {
+    setIsUnitDrawerOpen(false);
+    setSelectedUnit(undefined);
   };
 
   if (isLoading) {
@@ -79,40 +99,58 @@ export const FloorList: React.FC<FloorListProps> = ({ blockId, onEdit, onAdd }) 
             </tr>
           </thead>
           <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
-            {blockFloors.map((floor) => (
-              <tr key={floor.id} className="hover:bg-gray-50 dark:hover:bg-gray-700">
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
-                  {t('floor.floorNumber', { number: floor.floorNumber })}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
-                  {floor.numberOfUnits}
-                </td>
-                <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                  <button
-                    onClick={() => onEdit(floor)}
-                    className="text-primary hover:text-primary/80 mr-3"
-                  >
-                    <Pencil className="w-4 h-4" />
-                  </button>
-                  <button
-                    onClick={() => handleDelete(floor.id)}
-                    className="text-red-600 hover:text-red-800"
-                  >
-                    <Trash2 className="w-4 h-4" />
-                  </button>
-                </td>
-              </tr>
-            ))}
-            {blockFloors.length === 0 && (
+            {blockFloors.length === 0 ? (
               <tr>
                 <td colSpan={3} className="px-6 py-4 text-center text-sm text-gray-500 dark:text-gray-400">
                   {t('floor.noFloors')}
                 </td>
               </tr>
+            ) : (
+              blockFloors.map((floor) => (
+                <React.Fragment key={floor.id}>
+                  <tr className="hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-white">
+                      {t('floor.floorNumber', { number: floor.floorNumber })}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-400">
+                      {floor.numberOfUnits}
+                    </td>
+                    <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                      <button
+                        onClick={() => onEdit(floor)}
+                        className="text-primary hover:text-primary/80 mr-3"
+                      >
+                        <Pencil className="w-4 h-4" />
+                      </button>
+                      <button
+                        onClick={() => handleDelete(floor.id)}
+                        className="text-red-600 hover:text-red-800"
+                      >
+                        <Trash2 className="w-4 h-4" />
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colSpan={3} className="px-6 py-4 bg-gray-50 dark:bg-gray-700">
+                      <UnitList
+                        floorId={floor.id}
+                        onEdit={handleEditUnit}
+                        onAdd={() => handleAddUnit(floor.id)}
+                      />
+                    </td>
+                  </tr>
+                </React.Fragment>
+              ))
             )}
           </tbody>
         </table>
       </div>
+      <UnitDrawer
+        isOpen={isUnitDrawerOpen}
+        onClose={handleCloseUnitDrawer}
+        unit={selectedUnit}
+        floorId={selectedFloorId!}
+      />
     </div>
   );
-}
+};

@@ -64,5 +64,28 @@
     "deleteError": "Failed to delete floor",
     "deleteConfirm": "Are you sure you want to delete this floor?",
     "floorNumber": "Floor {{number}}"
+  },
+  "unit": {
+    "title": "Units",
+    "createTitle": "Add New Unit",
+    "editTitle": "Edit Unit",
+    "numberLabel": "Unit Number",
+    "typeLabel": "Unit Type",
+    "number": "Unit Number",
+    "type": "Type",
+    "add": "Add Unit",
+    "noUnits": "No units added yet",
+    "createSuccess": "Unit created successfully",
+    "createError": "Failed to create unit",
+    "editSuccess": "Unit updated successfully",
+    "editError": "Failed to update unit",
+    "deleteSuccess": "Unit deleted successfully",
+    "deleteError": "Failed to delete unit",
+    "deleteConfirm": "Are you sure you want to delete this unit?",
+    "types": {
+      "apartment": "Apartment",
+      "studio": "Studio",
+      "penthouse": "Penthouse"
+    }
   }
 }
