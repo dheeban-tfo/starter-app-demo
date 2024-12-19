@@ -32,5 +32,37 @@
     "createError": "Failed to create facility",
     "editSuccess": "Facility updated successfully",
     "editError": "Failed to update facility"
+  },
+  "block": {
+    "createTitle": "Add New Block",
+    "editTitle": "Edit Block",
+    "nameLabel": "Block Name",
+    "descriptionLabel": "Description",
+    "floorsLabel": "Number of Floors",
+    "createSuccess": "Block created successfully",
+    "createError": "Failed to create block",
+    "editSuccess": "Block updated successfully",
+    "editError": "Failed to update block",
+    "deleteSuccess": "Block deleted successfully",
+    "deleteError": "Failed to delete block",
+    "deleteConfirm": "Are you sure you want to delete this block?"
+  },
+  "floor": {
+    "title": "Floors",
+    "createTitle": "Add New Floor",
+    "editTitle": "Edit Floor",
+    "numberLabel": "Floor Number",
+    "number": "Floor",
+    "units": "Units",
+    "add": "Add Floor",
+    "noFloors": "No floors added yet",
+    "createSuccess": "Floor created successfully",
+    "createError": "Failed to create floor",
+    "editSuccess": "Floor updated successfully",
+    "editError": "Failed to update floor",
+    "deleteSuccess": "Floor deleted successfully",
+    "deleteError": "Failed to delete floor",
+    "deleteConfirm": "Are you sure you want to delete this floor?",
+    "floorNumber": "Floor {{number}}"
   }
 }

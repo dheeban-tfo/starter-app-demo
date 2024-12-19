@@ -32,5 +32,37 @@
     "createError": "فشل في إنشاء المرفق",
     "editSuccess": "تم تحديث المرفق بنجاح",
     "editError": "فشل في تحديث المرفق"
+  },
+  "block": {
+    "createTitle": "إضافة مبنى جديد",
+    "editTitle": "تعديل المبنى",
+    "nameLabel": "اسم المبنى",
+    "descriptionLabel": "الوصف",
+    "floorsLabel": "عدد الطوابق",
+    "createSuccess": "تم إنشاء المبنى بنجاح",
+    "createError": "فشل في إنشاء المبنى",
+    "editSuccess": "تم تحديث المبنى بنجاح",
+    "editError": "فشل في تحديث المبنى",
+    "deleteSuccess": "تم حذف المبنى بنجاح",
+    "deleteError": "فشل في حذف المبنى",
+    "deleteConfirm": "هل أنت متأكد من حذف هذا المبنى؟"
+  },
+  "floor": {
+    "title": "الطوابق",
+    "createTitle": "إضافة طابق جديد",
+    "editTitle": "تعديل الطابق",
+    "numberLabel": "رقم الطابق",
+    "number": "الطابق",
+    "units": "الوحدات",
+    "add": "إضافة طابق",
+    "noFloors": "لا توجد طوابق مضافة",
+    "createSuccess": "تم إنشاء الطابق بنجاح",
+    "createError": "فشل في إنشاء الطابق",
+    "editSuccess": "تم تحديث الطابق بنجاح",
+    "editError": "فشل في تحديث الطابق",
+    "deleteSuccess": "تم حذف الطابق بنجاح",
+    "deleteError": "فشل في حذف الطابق",
+    "deleteConfirm": "هل أنت متأكد من حذف هذا الطابق؟",
+    "floorNumber": "الطابق {{number}}"
   }
 }
